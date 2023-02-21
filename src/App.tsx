@@ -13,6 +13,9 @@ function App() {
       <li>
         <Link to={`test`}>Test</Link>
       </li>
+      <li>
+        <Link to={`function-re-init`}>FunctionReInit</Link>
+      </li>
       <div>
         <Outlet />
       </div>
