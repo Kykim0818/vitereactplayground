@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
+import { FunctionReInit } from "./pages/FunctionReInit";
 import { List } from "./pages/List";
-import { MapRenderTest } from "./pages/mapRenderTest";
+import { MapRenderTest } from "./pages/MapRenderTest";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "map-render-test",
         element: <MapRenderTest />,
+      },
+      {
+        path: "function-re-init",
+        element: <FunctionReInit />,
       },
     ],
   },

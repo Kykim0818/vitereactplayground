@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 export const FunctionReInit = () => {
   const [paint, setPaint] = useState(false);
@@ -14,6 +14,7 @@ export const FunctionReInit = () => {
   }, []);
 
   // deps 에 testFunction1, testFunction2 넣어가면서 테스트
+  useEffect(() => {
     console.log("deps-testFunction Effect");
   }, []);
 
