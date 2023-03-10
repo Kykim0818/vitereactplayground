@@ -16,7 +16,10 @@ function App() {
       <li>
         <Link to={`function-re-init`}>FunctionReInit</Link>
       </li>
-      <div>
+      <li>
+        <Link to={`context-test`}>React-Context-test</Link>
+      </li>
+      <div style={{ marginTop: "20px" }}>
         <Outlet />
       </div>
     </div>
