@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export const Foo = (props: { index: number }) => {
+export const Foo = (props: { index: number; value: string }) => {
   useEffect(() => {
     console.log("Foo render", props.index);
   }, []);
@@ -11,5 +11,9 @@ export const Foo = (props: { index: number }) => {
     };
   });
 
-  return <div>Foo {props.index}</div>;
+  return (
+    <div>
+      Foo {props.index} + {props.value}
+    </div>
+  );
 };

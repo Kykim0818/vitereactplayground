@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import { FunctionReInit } from "./pages/FunctionReInit";
 import { List } from "./pages/List";
-import { MapRenderTest } from "./pages/MapRenderTest";
+import { MapRenderTest } from "./pages/MapRenderTest/MapRenderTest";
 
 const router = createBrowserRouter([
   {
