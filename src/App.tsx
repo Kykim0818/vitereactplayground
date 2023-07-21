@@ -30,6 +30,9 @@ function App() {
       <li>
         <Link to={`modalTest`}>ModalTest</Link>
       </li>
+      <li>
+        <Link to={`componentTest`}>Component</Link>
+      </li>
       <div>
         <Outlet />
       </div>

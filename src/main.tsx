@@ -2,15 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
+import { ComponentTest } from "./pages/ComponentTest";
 import { FunctionReInit } from "./pages/FunctionReInit";
 import { List } from "./pages/List";
 import { MapRenderTest } from "./pages/MapRenderTest/MapRenderTest";
-import { Modal } from "./pages/Test/Modal";
 import { NewPage } from "./pages/Test/NewPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
+
     element: <App />,
     children: [
       {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "modalTest",
         element: <NewPage />,
+      },
+      {
+        path: "componentTest",
+        element: <ComponentTest />,
       },
     ],
   },
