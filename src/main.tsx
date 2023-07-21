@@ -5,6 +5,8 @@ import App from "./App";
 import { FunctionReInit } from "./pages/FunctionReInit";
 import { List } from "./pages/List";
 import { MapRenderTest } from "./pages/MapRenderTest/MapRenderTest";
+import { Modal } from "./pages/Test/Modal";
+import { NewPage } from "./pages/Test/NewPage";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "function-re-init",
         element: <FunctionReInit />,
+      },
+      {
+        path: "modalTest",
+        element: <NewPage />,
       },
     ],
   },

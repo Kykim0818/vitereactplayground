@@ -1,8 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 
 function App() {
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    function testFunc() {
+      console.log("trigger PopState");
+    }
+    window.addEventListener("popstate", testFunc);
+
+    return () => {
+      window.removeEventListener("popstate", testFunc);
+    };
+  }, []);
 
   return (
     <div>
@@ -15,6 +26,9 @@ function App() {
       </li>
       <li>
         <Link to={`function-re-init`}>FunctionReInit</Link>
+      </li>
+      <li>
+        <Link to={`modalTest`}>ModalTest</Link>
       </li>
       <div>
         <Outlet />
