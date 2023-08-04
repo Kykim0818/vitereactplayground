@@ -7,6 +7,7 @@ import { FunctionReInit } from "./pages/FunctionReInit";
 import { List } from "./pages/List";
 import { MapRenderTest } from "./pages/MapRenderTest/MapRenderTest";
 import { NewPage } from "./pages/Test/NewPage";
+import { ComponentTest1 } from "./pages/ComponentTest1";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "componentTest",
         element: <ComponentTest />,
+      },
+      {
+        path: "componentTest_overflow",
+        element: <ComponentTest1 />,
       },
     ],
   },
